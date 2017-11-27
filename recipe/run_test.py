@@ -44,8 +44,10 @@ driver = gdal.GetDriverByName("WCS")
 assert driver is not None
 
 # only available when freexl successfully linked in.
-driver = ogr.GetDriverByName("XLS")
-assert driver is not None
+import sys
+if sys.platform != 'darwin':
+    driver = ogr.GetDriverByName("XLS")
+    assert driver is not None
 
 # only available when expat successfully linked in.
 driver = ogr.GetDriverByName("KML")
