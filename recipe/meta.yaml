@@ -13,11 +13,10 @@ source:
     - install_scripts.patch
 
 build:
-  number: 1
+  number: 2
   skip: True  # [win]
   features:
     - vc9  # [win and py27]
-    - vc10  # [win and py34]
     - vc14  # [win and (py35 and py36)]
 
 requirements:
@@ -31,8 +30,8 @@ requirements:
     - numpy 1.9.*  # [win and py35]
     - numpy 1.11.*  # [win and py36]
     - libgdal {{ version }}
+    - openjpeg 2.1.*
     - vc 9  # [win and py27]
-    - vc 10  # [win and py34]
     - vc 14  # [win and (py35 and py36)]
   run:
     - python
@@ -40,9 +39,9 @@ requirements:
     - numpy >=1.9  # [win and py35]
     - numpy >=1.11  # [win and py36]
     - libgdal {{ version }}
+    - openjpeg 2.1.*
     - pcre
     - vc 9  # [win and py27]
-    - vc 10  # [win and py34]
     - vc 14  # [win and (py35 and py36)]
 
 test:
@@ -73,8 +72,8 @@ test:
     - gdalwarp --version
     - gdalinfo --formats
     - gdalinfo http://thredds.nersc.no/thredds/dodsC/greenpath/Model/topaz  # [not win]
-    - conda inspect linkages -p $PREFIX gdal  # [not win]
-    - conda inspect objects -p $PREFIX gdal  # [osx]
+    - conda inspect linkages -p $PREFIX $PKG_NAME  # [not win]
+    - conda inspect objects -p $PREFIX $PKG_NAME  # [osx]
 
 about:
   home: http://www.gdal.org/
