@@ -12,7 +12,7 @@ source:
     - disable_jpeg12.patch  # [win]
 
 build:
-  number: 5
+  number: 6
 
 requirements:
   build:
@@ -26,7 +26,6 @@ requirements:
   host:
     - blosc
     - cfitsio
-    - curl
     - expat
     - freexl
     - geos
@@ -38,7 +37,11 @@ requirements:
     - jpeg
     - json-c  # [not win]
     - kealib
+    - lerc
+    - libcurl
     - libdap4  # [not win]
+    - libdeflate
+    - libiconv
     - libkml
     - libnetcdf
     - libpng
@@ -50,7 +53,7 @@ requirements:
     - libxml2
     - openjpeg
     - openssl
-    - pcre
+    - pcre2
     - poppler
     - postgresql
     - proj
@@ -81,7 +84,6 @@ outputs:
       host:
         - blosc
         - cfitsio
-        - curl
         - expat
         - freexl
         - geos
@@ -93,7 +95,11 @@ outputs:
         - jpeg
         - json-c  # [not win]
         - kealib
+        - lerc
+        - libcurl
         - libdap4  # [not win]
+        - libdeflate
+        - libiconv
         - libkml
         - libnetcdf
         - libpng
@@ -105,7 +111,7 @@ outputs:
         - libxml2
         - openjpeg
         - openssl
-        - pcre
+        - pcre2
         - poppler
         - postgresql
         - proj
