@@ -51,6 +51,7 @@ requirements:
     - libuuid  # [linux]
     - libwebp-base
     - libxml2
+    - lz4-c
     - openjpeg
     - openssl
     - pcre2
@@ -109,6 +110,7 @@ outputs:
         - libuuid  # [linux]
         - libwebp-base
         - libxml2
+        - lz4-c
         - openjpeg
         - openssl
         - pcre2
