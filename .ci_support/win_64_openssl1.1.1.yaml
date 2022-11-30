@@ -44,6 +44,8 @@ libwebp_base:
 - '1'
 libxml2:
 - '2.10'
+lz4_c:
+- 1.9.3
 numpy:
 - '1.21'
 - '1.23'
