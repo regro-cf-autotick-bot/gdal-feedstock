@@ -1,4 +1,4 @@
-{% set version = "3.6.0" %}
+{% set version = "3.6.1" %}
 
 package:
   name: gdal-split
@@ -6,15 +6,15 @@ package:
 
 source:
   url: http://download.osgeo.org/gdal/{{ version }}/gdal-{{ version }}.tar.xz
-  sha256: f7afa4aa8d32d0799e011a9f573c6a67e9471f78e70d3d0d0b45b45c8c0c1a94
+  sha256: 68f1c03547ff7152289789db7f67ee634167c9b7bfec4872b88406b236f9c230
   patches:
     - 0001-Improve-numpy-fixing.patch
     - 0002-Parquet-make-sure-that-ArrowLayer-destructor-is-avai.patch
 
 build:
-  number: 14
+  number: 0
   skip_compile_pyc:
-    - "share/bash-completion/completions/*.py"
+    - share/bash-completion/completions/*.py
 
 requirements:
   build:
@@ -242,7 +242,7 @@ outputs:
     script: install_python.bat  # [win]
     build:
       skip_compile_pyc:
-        - "share/bash-completion/completions/*.py"
+        - share/bash-completion/completions/*.py
     requirements:
       build:
         - {{ compiler('c') }}
