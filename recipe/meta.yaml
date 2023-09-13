@@ -11,7 +11,7 @@ source:
     - flatgeobuffcxx17.patch
 
 build:
-  number: 15
+  number: 16
   skip_compile_pyc:
     - share/bash-completion/completions/*.py
 
@@ -34,7 +34,6 @@ requirements:
     - giflib  # [not win]
     - hdf4
     - hdf5
-    - icu
     - libjpeg-turbo
     - json-c  # [not win]
     - kealib
@@ -97,7 +96,6 @@ outputs:
         - giflib  # [not win]
         - hdf4
         - hdf5
-        - icu
         - libjpeg-turbo
         - json-c  # [not win]
         - kealib
@@ -183,7 +181,6 @@ outputs:
         - giflib  # [not win]
         - hdf4
         - hdf5
-        - icu
         - libjpeg-turbo
         - json-c  # [not win]
         - kealib
