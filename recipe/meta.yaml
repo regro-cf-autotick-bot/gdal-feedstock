@@ -11,7 +11,7 @@ source:
     - flatgeobuffcxx17.patch
 
 build:
-  number: 17
+  number: 18
   skip_compile_pyc:
     - share/bash-completion/completions/*.py
 
@@ -45,7 +45,7 @@ requirements:
     - libnetcdf
     - libpng
     - libpq
-    - libspatialite
+    - libspatialite <5.1
     - libtiff
     - libuuid  # [linux]
     - libwebp-base
@@ -107,7 +107,7 @@ outputs:
         - libnetcdf
         - libpng
         - libpq
-        - libspatialite
+        - libspatialite <5.1
         - libtiff
         - libuuid  # [linux]
         - libwebp-base
@@ -133,7 +133,7 @@ outputs:
         - giflib  # [not win]
         - json-c  # [not win]
         - libpq
-        - libspatialite
+        - libspatialite <5.1
         - libuuid  # [linux]
         - libwebp-base
         - poppler
@@ -189,7 +189,7 @@ outputs:
         - libnetcdf
         - libpng
         - libpq
-        - libspatialite
+        - libspatialite <5.1
         - libtiff
         - libuuid  # [linux]
         - libwebp-base
@@ -214,7 +214,7 @@ outputs:
         - giflib  # [not win]
         - json-c  # [not win]
         - libpq
-        - libspatialite
+        - libspatialite <5.1
         - libuuid  # [linux]
         - libwebp-base
         - poppler
