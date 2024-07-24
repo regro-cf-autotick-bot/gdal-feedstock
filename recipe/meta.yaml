@@ -46,7 +46,7 @@ requirements:
     - libcurl
     - libdeflate
     - libiconv
-    - libkml
+    - libkml-devel
     - libnetcdf
     - libpng
     - libpq
@@ -109,7 +109,7 @@ outputs:
         - libcurl
         - libdeflate
         - libiconv
-        - libkml
+        - libkml-devel
         - libnetcdf
         - libpng
         - libpq
@@ -197,7 +197,7 @@ outputs:
         - libarrow-dataset
         - libparquet
         {% endif %}
-        - libkml
+        - libkml-devel
         - libnetcdf
         - libpng
         - libpq
