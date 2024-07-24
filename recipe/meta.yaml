@@ -9,7 +9,7 @@ source:
   sha256: e8b4df2a8a7d25272f867455c0c230459545972f81f0eff2ddbf6a6f60dcb1e4
 
 build:
-  number: 12
+  number: 13
   skip_compile_pyc:
     - share/bash-completion/completions/*.py
   skip: true  # [ppc64le]
@@ -46,7 +46,7 @@ requirements:
     - libcurl
     - libdeflate
     - libiconv
-    - libkml
+    - libkml-devel
     - libnetcdf
     - libpng
     - libpq
@@ -109,7 +109,7 @@ outputs:
         - libcurl
         - libdeflate
         - libiconv
-        - libkml
+        - libkml-devel
         - libnetcdf
         - libpng
         - libpq
@@ -197,7 +197,7 @@ outputs:
         - libarrow-dataset
         - libparquet
         {% endif %}
-        - libkml
+        - libkml-devel
         - libnetcdf
         - libpng
         - libpq
@@ -274,6 +274,7 @@ outputs:
         # having not been migrated yet causing conflicts with the "libgdal" output
         # See: https://github.com/conda-forge/gdal-feedstock/pull/415
         - hdf5
+        - libkml-devel
         - libxml2
         # Workaround to prevent conflicts seen in
         #  https://github.com/conda-forge/gdal-feedstock/pull/543
