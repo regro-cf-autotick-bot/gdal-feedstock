@@ -63,7 +63,6 @@ numpy:
 - '2.0'
 - '2.0'
 - '2.0'
-- '1.22'
 - '2.0'
 openjpeg:
 - '2'
@@ -72,22 +71,19 @@ openssl:
 pcre2:
 - '10.44'
 pin_run_as_build:
-  poppler:
-    max_pin: x.x
   python:
     min_pin: x.x
     max_pin: x.x
 poppler:
-- '24.04'
+- '24.08'
 postgresql:
 - '16'
 proj:
-- '9.4'
+- '9.5'
 python:
 - 3.10.* *_cpython
 - 3.11.* *_cpython
 - 3.12.* *_cpython
-- 3.8.* *_cpython
 - 3.9.* *_cpython
 qhull:
 - '2020.2'
